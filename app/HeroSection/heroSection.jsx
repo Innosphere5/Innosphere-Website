@@ -12,36 +12,7 @@ import website from "../Images/website.jpg";
 const HeroSection = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Initialize theme from localStorage on component mount
   useEffect(() => {
-    // Check if dark mode was previously set
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-
-    // Set initial theme based on localStorage or system preference
-    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
-
-  // Listen for theme changes
-  useEffect(() => {
-    const handleThemeChange = () => {
-      const currentTheme = localStorage.getItem("theme");
-      if (currentTheme === "dark") {
-        setDarkMode(true);
-      } else {
-        setDarkMode(false);
-      }
-    };
-
-    window.addEventListener("storage", handleThemeChange);
-
-    // Create a MutationObserver to detect changes to the html class
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (
@@ -54,11 +25,9 @@ const HeroSection = () => {
     });
 
     observer.observe(document.documentElement, { attributes: true });
+    setDarkMode(document.documentElement.classList.contains("dark"));
 
-    return () => {
-      window.removeEventListener("storage", handleThemeChange);
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
