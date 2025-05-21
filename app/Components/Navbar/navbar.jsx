@@ -113,19 +113,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          {/* Dark Mode Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors shadow-sm focus:outline-none"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? (
-              <Sun size={20} className="text-yellow-500" />
-            ) : (
-              <Moon size={20} className="text-slate-700" />
-            )}
-          </button>
-
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-slate-900 dark:text-white focus:outline-none"
