@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import AnimatedBackground from "./AnimatedBackground";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -44,11 +43,8 @@ const AuroraBackground = ({ children }) => {
 const HeroSection = () => {
   return (
     <section className="relative w-full pt-28 pb-16 px-6 md:px-12 lg:px-16 overflow-hidden transition-colors duration-300 bg-white min-h-screen flex flex-col justify-center">
-      {/* 3D Animated Background */}
-      <AnimatedBackground />
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/30 to-white/50 backdrop-blur-[2px] -z-10"></div>
+      {/* Aurora Background */}
+      <AuroraBackground />
 
       {/* Main Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
