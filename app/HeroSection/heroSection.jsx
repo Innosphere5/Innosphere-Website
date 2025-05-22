@@ -15,18 +15,25 @@ const AuroraBackground = ({ children }) => {
   return (
     <div className="relative w-full h-full overflow-hidden bg-white">
       <div className="absolute inset-0">
-        {/* Aurora blobs */}
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-        <div className="absolute -bottom-8 right-20 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
+        {/* Primary Aurora Elements */}
+        <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-aurora-shift"></div>
+        <div className="absolute top-0 -right-4 w-[500px] h-[500px] bg-gradient-to-l from-blue-300 via-cyan-300 to-teal-300 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-aurora-shift-reverse animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-[550px] h-[550px] bg-gradient-to-tr from-rose-300 via-fuchsia-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-aurora-float animation-delay-4000"></div>
+        
+        {/* Accent Layers */}
+        <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-gradient-to-br from-violet-400/40 to-indigo-400/40 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-tr from-blue-400/30 to-emerald-400/30 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow animation-delay-3000"></div>
+        
+        {/* Moving Particles */}
+        <div className="absolute inset-0">
+          <div className="absolute w-4 h-4 bg-white rounded-full blur-sm animate-particle-1"></div>
+          <div className="absolute w-3 h-3 bg-white rounded-full blur-sm animate-particle-2 animation-delay-1000"></div>
+          <div className="absolute w-2 h-2 bg-white rounded-full blur-sm animate-particle-3 animation-delay-2000"></div>
+        </div>
 
-        {/* Additional glow effects */}
-        <div className="absolute top-1/4 left-1/3 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float-medium"></div>
-
-        {/* Radial gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/90 to-white/80 mix-blend-overlay"></div>
+        {/* Refined Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white/50"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.8),transparent)]"></div>
       </div>
       {children}
     </div>
