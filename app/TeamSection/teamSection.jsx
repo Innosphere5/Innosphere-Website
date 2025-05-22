@@ -313,7 +313,7 @@ export default function TeamSection() {
           </div>
 
           <h1
-            className="text-6xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-emerald-600 bg-clip-text text-transparent pb-2 font-montserrat"
+            className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-emerald-600 bg-clip-text text-transparent pb-2 font-montserrat"
             style={{ fontFamily: "'Sora', sans-serif" }}
           >
             MINDS BEHIND INNOSPHERE

@@ -4,16 +4,50 @@ import Navbar from "./Components/Navbar/navbar";
 import Policy from "./Components/Policy/policy";
 import Product from "./Products/product";
 import TeamSection from "./TeamSection/teamSection";
-export const page = () => {
+import Footer from "./Components/Footer/footer";
+import ClientWork from "./ClientWork/clientwork";
+import Contact from "./ContactSection/contactSection"
+
+const Page = () => {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <Policy />
-      <Product />
-      <TeamSection />
+
+      {/* Hero Section with proper ID */}
+      <section id="home">
+        <HeroSection />
+      </section>
+
+      {/* Policy/About Section with proper ID */}
+      <section id="policy">
+        <Policy />
+      </section>
+
+      {/* Products Section with proper ID */}
+      <section id="products">
+        <Product />
+      </section>
+
+      {/* Team Section with proper ID */}
+      <section id="team">
+        <TeamSection />
+      </section>
+
+      {/* Client Work Section with proper ID */}
+      <section id="clientwork">
+        <ClientWork />
+      </section>
+      <section id="contact">
+      <Contact />
+      </section>
+
+      {/* Footer with Contact ID for the Contact button */}
+      <section id="footer">
+        <Footer />
+      </section>
+      
     </>
   );
 };
 
-export default page;
+export default Page;
