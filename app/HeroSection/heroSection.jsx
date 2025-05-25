@@ -2,13 +2,45 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 // Handle images
 import design from "../Images/design.jpg";
 import coding from "../Images/coding.jpg";
 import website from "../Images/website.jpg";
+
+// Smooth scroll function
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
+
+// Custom Link Component for smooth scrolling
+const ScrollLink = ({ href, className, children, onClick }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    // Extract section ID from href (remove the # symbol)
+    const sectionId = href.replace("#", "");
+    scrollToSection(sectionId);
+
+    // Call any additional onClick handler
+    if (onClick) {
+      onClick(e);
+    }
+  };
+
+  return (
+    <button onClick={handleClick} className={className}>
+      {children}
+    </button>
+  );
+};
 
 // Aurora Background Component
 const AuroraBackground = ({ children }) => {
@@ -186,25 +218,25 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons with smooth scrolling */}
         <motion.div
           className="flex flex-wrap justify-center gap-6 mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.8 }}
         >
-          <Link
-            href="/contact"
+          <ScrollLink
+            href="#contact"
             className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3.5 px-10 rounded-lg text-lg font-montserrat transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Free Consultancy
-          </Link>
-          <Link
-            href="/products"
+          </ScrollLink>
+          <ScrollLink
+            href="#products"
             className="bg-white hover:bg-gray-50 text-slate-900 font-medium py-3.5 px-10 rounded-lg text-lg font-montserrat border border-slate-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Our Products
-          </Link>
+          </ScrollLink>
         </motion.div>
 
         {/* Image Gallery Section */}
@@ -393,6 +425,11 @@ const customStyles = `
 
 .animation-delay-6000 {
   animation-delay: 6s;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
 }
 `;
 
