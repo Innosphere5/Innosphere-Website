@@ -282,19 +282,15 @@ const Navbar = () => {
             <motion.button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`font-medium relative group text-base transition-all duration-300 cursor-pointer ${
-                scrolled 
-                  ? 'text-white hover:text-blue-200 drop-shadow-lg' 
-                  : 'text-slate-800 hover:text-indigo-600'
-              } ${activeSection === item.id ? (scrolled ? 'text-blue-200' : 'text-indigo-600') : ''}`}
+              className={`font-medium relative group text-base transition-all duration-300 cursor-pointer text-slate-800 hover:text-indigo-600 ${
+                activeSection === item.id ? 'text-indigo-600' : ''
+              }`}
               whileHover={{ y: -2 }}
               whileTap={{ y: 0 }}
             >
               {item.label}
               <motion.span 
-                className={`absolute -bottom-1 left-0 h-0.5 ${
-                  scrolled ? 'bg-blue-200' : 'bg-indigo-600'
-                }`}
+                className="absolute -bottom-1 left-0 h-0.5 bg-indigo-600"
                 initial={{ width: 0 }}
                 animate={{ 
                   width: activeSection === item.id ? '100%' : '0%'
@@ -328,11 +324,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button with enhanced styling */}
         <motion.button
-          className={`md:hidden focus:outline-none p-2 rounded-full transition-all duration-300 ml-auto ${
-            scrolled 
-              ? 'text-white hover:bg-white hover:bg-opacity-20 backdrop-blur-sm' 
-              : 'text-slate-900 hover:bg-gray-100'
-          }`}
+          className="md:hidden focus:outline-none p-2 rounded-full transition-all duration-300 ml-auto text-slate-900 hover:bg-gray-100"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
           whileHover={{ scale: 1.1 }}
@@ -388,11 +380,9 @@ const Navbar = () => {
             <motion.button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`font-medium py-3 border-b transition-all duration-300 text-left ${
-                scrolled 
-                  ? 'border-white border-opacity-20 text-white hover:text-blue-200' 
-                  : 'border-slate-100 text-slate-800 hover:text-indigo-600'
-              } ${activeSection === item.id ? (scrolled ? 'text-blue-200 border-blue-200' : 'text-indigo-600 border-indigo-600') : ''}`}
+              className={`font-medium py-3 border-b transition-all duration-300 text-left border-slate-100 text-slate-800 hover:text-indigo-600 ${
+                activeSection === item.id ? 'text-indigo-600 border-indigo-600' : ''
+              }`}
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: index * 0.1, duration: 0.3 }}
