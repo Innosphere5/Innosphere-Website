@@ -9,7 +9,7 @@ import { ExternalLink, ChevronRight, ArrowRight } from "lucide-react";
 import techpoint from "../Images/techpoint.png";
 import roadmapfinder from "../Images/roadmapfinder.png";
 import threadsnatch from "../Images/threadsnatch.png";
-import themes from "daisyui/theme/object";
+
 
 const Product = () => {
   // Animation states for hover effects
@@ -32,8 +32,10 @@ const Product = () => {
         "Internet Best Courses",
         "Personalized roadmaps",
         "Official Docs & Tools",
+        "Blogs on new technologies",
+        "AI Powered Career Guidane "
       ],
-      technologies: ["Next js", "Firebase", "Tailwind Css"],
+      technologies: ["Next js", "Firebase", "Tailwind Css" , "OpenRouter AI"],
       productLink: "https://roadmapfinder.tech",
     },
     {

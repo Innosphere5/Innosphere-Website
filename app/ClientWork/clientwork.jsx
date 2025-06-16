@@ -33,20 +33,8 @@ const ClientWorkSection = () => {
       features: ["Inventory Management", "Analytics Dashboard", "Multi-vendor Support"],
       color: "from-purple-500 to-pink-500",
       bgPattern: "bg-gradient-to-br from-purple-50 to-pink-50"
-    },
-    {
-      id: 3,
-      title: "Doctor Consultancy",
-      category: "Healthcare",
-      description: "Telemedicine platform connecting patients with healthcare professionals seamlessly.",
-      image: "/api/placeholder/400/250",
-      tags: ["Next js", "Tailwind css", "Email js", "Daisy UI"],
-      status: "In Development",
-      link: "#",
-      features: ["Video Consultations", "Appointment Booking", "Medical Records"],
-      color: "from-green-500 to-emerald-500",
-      bgPattern: "bg-gradient-to-br from-green-50 to-emerald-50"
     }
+
   ];
 
   return (
