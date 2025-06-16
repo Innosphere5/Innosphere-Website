@@ -71,17 +71,17 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#1E88E5", // custom blue
+          primary: "#4f46e5", // indigo-600
           secondary: "#3b82f6", // blue-500
-          accent: "#1E88E5", // custom blue
+          accent: "#2563eb", // blue-600
           neutral: "#1e293b", // slate-800
           "base-100": "#ffffff", // white
           "base-content": "#0f172a", // slate-900
         },
         dark: {
-          primary: "#1E88E5", // custom blue
+          primary: "#6366f1", // indigo-500
           secondary: "#60a5fa", // blue-400
-          accent: "#1E88E5", // custom blue
+          accent: "#3b82f6", // blue-500
           neutral: "#020617", // slate-950
           "base-100": "#0f172a", // slate-900
           "base-content": "#f8fafc", // slate-50

@@ -124,9 +124,9 @@ const Policy = () => {
 
         {/* Fast, Reliable Apps */}
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 group hover:-translate-y-2 relative overflow-hidden">
-          <div className="absolute right-0 top-0 w-32 h-32 bg-blue-50 rounded-bl-full -z-10 group-hover:bg-blue-100 transition-colors duration-300"></div>
+          <div className="absolute right-0 top-0 w-32 h-32 bg-purple-50 rounded-bl-full -z-10 group-hover:bg-purple-100 transition-colors duration-300"></div>
 
-          <div className="mb-6 p-4 bg-blue-100 rounded-2xl inline-block group-hover:bg-blue-200 transition-colors duration-300">
+          <div className="mb-6 p-4 bg-purple-100 rounded-2xl inline-block group-hover:bg-purple-200 transition-colors duration-300">
             <svg
               width="64"
               height="64"
@@ -139,14 +139,14 @@ const Policy = () => {
                 cx="32"
                 cy="32"
                 r="20"
-                fill="#1E88E5"
-                stroke="#1E88E5"
+                fill="#7C3AED"
+                stroke="#7C3AED"
                 strokeWidth="2.5"
               />
               <path
                 d="M32 20L24 36H32L32 44L40 28H32L32 20Z"
                 fill="white"
-                stroke="#1E88E5"
+                stroke="#7C3AED"
                 strokeWidth="0"
               />
             </svg>

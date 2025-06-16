@@ -152,10 +152,9 @@ const TeamMemberCard = ({ member }) => {
 
           {/* Animated underline - smoother animation */}
           <div
-            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-blue-600 to-blue-600 transition-all duration-500 ease-out ${
+            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 transition-all duration-500 ease-out ${
               isHovered ? "w-16" : "w-0"
             }`}
-            style={{ backgroundColor: "#1E88E5" }}
           ></div>
         </div>
       </div>
@@ -207,12 +206,7 @@ const TeamMemberCard = ({ member }) => {
           onClick={toggleSocial}
           aria-label={`Toggle social media for ${member.name}`}
           aria-expanded={isOpen}
-          className="relative text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-300"
-          style={{ 
-            background: `linear-gradient(to right, #1E88E5, #1E88E5)`,
-            boxShadow: isOpen ? "0 10px 15px -3px rgba(30, 136, 229, 0.4)" : "",
-            focusRingColor: "#1E88E5"
-          }}
+          className="relative bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 hover:shadow-indigo-500/50"
           style={{
             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
             boxShadow: isOpen ? "0 10px 15px -3px rgba(99, 102, 241, 0.4)" : "",
@@ -319,7 +313,7 @@ export default function TeamSection() {
           </div>
 
           <h1
-            className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-600 to-emerald-600 bg-clip-text text-transparent pb-2 font-montserrat"
+            className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-emerald-600 bg-clip-text text-transparent pb-2 font-montserrat"
             style={{ fontFamily: "'Sora', sans-serif" }}
           >
             MINDS BEHIND INNOSPHERE
