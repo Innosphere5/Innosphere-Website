@@ -253,7 +253,7 @@ Please respond within 24 hours as promised.
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl">
+              <div className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl">
                 <h3 className="font-semibold text-gray-900 mb-2">
                   Ready to Start?
                 </h3>

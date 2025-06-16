@@ -152,7 +152,7 @@ const TeamMemberCard = ({ member }) => {
 
           {/* Animated underline - smoother animation */}
           <div
-            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-500 ease-out ${
+            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 transition-all duration-500 ease-out ${
               isHovered ? "w-16" : "w-0"
             }`}
           ></div>

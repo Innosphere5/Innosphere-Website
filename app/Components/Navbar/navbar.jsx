@@ -193,13 +193,13 @@ const Navbar = () => {
         }
 
         .logo-gradient-scrolled {
-          background: linear-gradient(135deg, #1e1b4b 0%, #312e81 20%, #4f46e5 40%, #6366f1 60%, #8b5cf6 80%, #1e1b4b 100%);
+          background: linear-gradient(135deg, #1e1b4b 0%, #312e81 20%, #4f46e5 40%, #6366f1 60%, #2563eb 80%, #1e1b4b 100%);
           background-size: 300% 300%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: gradient-shift 6s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
-          filter: drop-shadow(0 2px 8px rgba(139, 92, 246, 0.6));
+          filter: drop-shadow(0 2px 8px rgba(37, 99, 235, 0.6));
           font-weight: 800;
           letter-spacing: -0.02em;
         }

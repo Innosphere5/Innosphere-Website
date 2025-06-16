@@ -160,7 +160,7 @@ const Policy = () => {
             Experience lightning-fast performance with our optimized applications built for speed and dependability.
           </p>
 
-          <div className="flex items-center text-purple-600 font-medium group-hover:text-purple-700">
+          <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-700">
             <span>Learn more</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 group-hover:translate-x-1 transition-transform duration-300">
               <path d="M5 12h14"></path>
