@@ -80,7 +80,7 @@ const TeamMemberCard = ({ member }) => {
 
   // Determine text colors based on featured status
   const nameColor = isHovered
-    ? "text-indigo-600"
+    ? "text-[#5409da]"
     : member.id === 2
     ? "text-white"
     : "text-gray-800";
@@ -101,7 +101,7 @@ const TeamMemberCard = ({ member }) => {
       >
         {/* Glowing top border with animation */}
         <div
-          className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition-transform duration-700 ${
+          className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#5409da] via-purple-500 to-pink-500 transition-transform duration-700 ${
             isHovered ? "scale-x-100" : "scale-x-0"
           }`}
         ></div>
@@ -141,7 +141,7 @@ const TeamMemberCard = ({ member }) => {
 
           {/* Animated underline - smoother animation */}
           <div
-            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-indigo-500 to-blue-600 transition-all duration-500 ease-out ${
+            className={`mx-auto mt-2 h-0.5 bg-gradient-to-r from-[#5409da] to-blue-600 transition-all duration-500 ease-out ${
               isHovered ? "w-16" : "w-0"
             }`}
           ></div>
@@ -195,7 +195,7 @@ const TeamMemberCard = ({ member }) => {
           onClick={toggleSocial}
           aria-label={`Toggle social media for ${member.name}`}
           aria-expanded={isOpen}
-          className="relative bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 hover:shadow-indigo-500/50"
+          className="relative bg-gradient-to-r from-[#5409da] to-purple-600 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg focus:outline-none focus:ring-2 focus:ring-[#5409da] focus:ring-offset-2 transition-all duration-300 hover:shadow-[#5409da]/50"
           style={{
             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
             boxShadow: isOpen ? "0 10px 15px -3px rgba(99, 102, 241, 0.4)" : "",
@@ -203,7 +203,7 @@ const TeamMemberCard = ({ member }) => {
         >
           {/* Animated pulse indicator when closed */}
           {!isOpen && (
-            <span className="absolute inset-0 rounded-full animate-ping bg-indigo-400 opacity-30"></span>
+            <span className="absolute inset-0 rounded-full animate-ping bg-[#5409da] opacity-30"></span>
           )}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@ export default function TeamSection() {
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <div className="inline-block relative">
             <h2
-              className="relative text-base font-semibold text-indigo-600 uppercase tracking-wider mb-3"
+              className="relative text-base font-semibold text-[#5409da] uppercase tracking-wider mb-3"
               style={{ fontFamily: "'Sora', sans-serif" }}
             >
               MEET THE TEAM

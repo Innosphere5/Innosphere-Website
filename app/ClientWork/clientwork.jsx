@@ -49,13 +49,13 @@ const ClientWorkSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium mb-4">
-            <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+          <div className="inline-flex items-center px-4 py-2 bg-purple-100 text-[#5409da] rounded-full text-sm font-medium mb-4">
+            <span className="w-2 h-2 bg-[#5409da] rounded-full mr-2"></span>
             Our Work
           </div>
 
           <h2 className="text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#5409da] via-purple-600 to-[#5409da] bg-clip-text text-transparent">
               Client Success
             </span>
             <br />
@@ -74,7 +74,7 @@ const ClientWorkSection = () => {
               { number: "98%", label: "Success Rate" }
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-1">{stat.number}</div>
+                <div className="text-3xl font-bold text-[#5409da] mb-1">{stat.number}</div>
                 <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}
@@ -90,7 +90,7 @@ const ClientWorkSection = () => {
               onMouseEnter={() => setHoveredCard(project.id)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className={`relative overflow-hidden rounded-2xl ${project.bgPattern} p-1 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-indigo-500/20`}>
+              <div className={`relative overflow-hidden rounded-2xl ${project.bgPattern} p-1 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#5409da]/20`}></div>
                 <div className="bg-white rounded-xl overflow-hidden">
                   {/* Project Image */}
                   <div className="relative overflow-hidden h-48">
@@ -122,7 +122,7 @@ const ClientWorkSection = () => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-3 bg-white text-indigo-600 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                        className="px-6 py-3 bg-white text-[#5409da] rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                       >
                         View Project
                       </a>
@@ -132,7 +132,7 @@ const ClientWorkSection = () => {
                   {/* Project Content */}
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-sm font-medium text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+                      <span className="text-sm font-medium text-[#5409da] bg-purple-50 px-3 py-1 rounded-full">
                         {project.category}
                       </span>
                       <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${project.color} flex items-center justify-center`}>
@@ -142,7 +142,7 @@ const ClientWorkSection = () => {
                       </div>
                     </div>
 
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-indigo-600 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#5409da] transition-colors duration-300">
                       {project.title}
                     </h3>
 
@@ -156,7 +156,7 @@ const ClientWorkSection = () => {
                       <div className="space-y-1">
                         {project.features.map((feature, idx) => (
                           <div key={idx} className="flex items-center text-sm text-gray-600">
-                            <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full mr-2"></div>
+                            <div className="w-1.5 h-1.5 bg-[#5409da] rounded-full mr-2"></div>
                             {feature}
                           </div>
                         ))}
@@ -168,7 +168,7 @@ const ClientWorkSection = () => {
                       {project.tags.map((tag, idx) => (
                         <span 
                           key={idx}
-                          className="px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-200"
+                          className="px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full hover:bg-purple-50 hover:text-[#5409da] transition-colors duration-200"
                         >
                           {tag}
                         </span>
@@ -186,15 +186,15 @@ const ClientWorkSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/90 to-purple-600/90"></div>
+          <div className="bg-gradient-to-r from-[#5409da] to-purple-600 rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5409da]/90 to-purple-600/90"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h3>
-              <p className="text-indigo-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
                 Let's transform your ideas into powerful digital solutions that drive results and exceed expectations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 bg-white text-indigo-600 rounded-xl font-semibold hover:bg-indigo-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                <button className="px-8 py-4 bg-white text-[#5409da] rounded-xl font-semibold hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                   Start Your Project
                 </button>
              
