@@ -14,10 +14,10 @@ const ClientWorkSection = () => {
       category: "Driving Learning Website",
       description: "Modern platform for driving learning license.",
       image: drivein,
-      tags: ["React", "TailwindCss", "Firebase", "Email js"],
+      tags: ["React", "TailwindCSS", "Firebase", "EmailJS"],
       status: "Live",
       link: "https://drive-in-omega.vercel.app/",
-      features: ["Learning License", "Practice Test","Renew License"],
+      features: ["Learning License", "Practice Test", "Renew License"],
       color: "from-blue-500 to-cyan-500",
       bgPattern: "bg-gradient-to-br from-blue-50 to-cyan-50"
     },
@@ -27,14 +27,13 @@ const ClientWorkSection = () => {
       category: "E-commerce",
       description: "Complete e-commerce solution with advanced inventory management and analytics.",
       image: brandbuys,
-      tags: ["Shopify", "Razorpay" ],
+      tags: ["Shopify", "Razorpay"],
       status: "Live",
       link: "https://brandbuys.in",
       features: ["Inventory Management", "Analytics Dashboard", "Multi-vendor Support"],
       color: "from-purple-500 to-pink-500",
       bgPattern: "bg-gradient-to-br from-purple-50 to-pink-50"
     }
-
   ];
 
   return (
@@ -90,7 +89,7 @@ const ClientWorkSection = () => {
               onMouseEnter={() => setHoveredCard(project.id)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className={`relative overflow-hidden rounded-2xl ${project.bgPattern} p-1 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#5409da]/20`}></div>
+              <div className={`relative overflow-hidden rounded-2xl ${project.bgPattern} p-1 transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-[#5409da]/20`}>
                 <div className="bg-white rounded-xl overflow-hidden">
                   {/* Project Image */}
                   <div className="relative overflow-hidden h-48">
@@ -197,7 +196,6 @@ const ClientWorkSection = () => {
                 <button className="px-8 py-4 bg-white text-[#5409da] rounded-xl font-semibold hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                   Start Your Project
                 </button>
-             
               </div>
             </div>
           </div>
