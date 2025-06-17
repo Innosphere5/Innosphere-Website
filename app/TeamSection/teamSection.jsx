@@ -246,9 +246,8 @@ export default function TeamSection() {
       position: "Graphic Designer",
       image: sahil,
       social: [
-        { icon: "twitter", url: "#", color: "bg-blue-400" },
-        { icon: "linkedin", url: "#", color: "bg-blue-700" },
-        { icon: "instagram", url: "#", color: "bg-pink-600" },
+       
+        { icon: "instagram", url: "https://www.instagram.com/graphixcraze__?igsh=MTNlMjZmNWNxczU1NQ==", color: "bg-pink-600" },
       ],
     },
    
@@ -260,7 +259,7 @@ export default function TeamSection() {
       social: [
        
         { icon: "linkedin", url: "https://www.linkedin.com/in/gagandeep-singh-77827a211utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", color: "bg-blue-700" },
-        { icon: "instagram", url: "https://www.instagram.com/o.x.gagan_?igsh=aW1iaHNnZTUyM2py", color: "bg-pink-600" },
+        { icon: "instagram", url: "https://www.instagram.com/o.gagan_?igsh=MWZ2OHVmdnNjaW1rNw==", color: "bg-pink-600" },
       ],
     },
   ];

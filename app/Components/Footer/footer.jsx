@@ -244,9 +244,7 @@ export default function Footer() {
               <FooterLink href="https://brandbuys.in" external>
                 BrandBuys.in
               </FooterLink>
-              <FooterLink href="#" external>
-                Doctor Consultancy
-              </FooterLink>
+              
             </ul>
           </motion.div>
         </div>

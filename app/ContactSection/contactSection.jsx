@@ -502,14 +502,7 @@ Please respond within 24 hours as promised.
               Join 100+ successful founders who've transformed their ideas into
               thriving SaaS platforms with Innosphere.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-colors">
-                View Our Work
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
-                Schedule Call
-              </button>
-            </div>
+
           </div>
         </div>
       </div>
