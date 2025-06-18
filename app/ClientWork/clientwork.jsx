@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 import brandbuys from "../Images/brandbuys.png";
 import drivein from "../Images/drivein.png";
+import TestimonialSection from "../TestimonialSection/testimonialSection";
 
 const ClientWorkSection = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -37,6 +38,7 @@ const ClientWorkSection = () => {
   ];
 
   return (
+    <>
     <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-indigo-50 relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 pointer-events-none">
@@ -202,6 +204,8 @@ const ClientWorkSection = () => {
         </div>
       </div>
     </section>
+    <TestimonialSection />
+    </>
   );
 };
 
