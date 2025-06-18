@@ -72,16 +72,16 @@ module.exports = {
       {
         light: {
           primary: "#5409da", // custom color
-          secondary: "#5409da", // updated to match primary
-          accent: "#5409da", // updated to match primary
+          secondary: "#3b82f6", // blue-500
+          accent: "#2563eb", // blue-600
           neutral: "#1e293b", // slate-800
           "base-100": "#ffffff", // white
           "base-content": "#0f172a", // slate-900
         },
         dark: {
           primary: "#5409da", // custom color
-          secondary: "#5409da", // updated to match primary
-          accent: "#5409da", // updated to match primary
+          secondary: "#60a5fa", // blue-400
+          accent: "#3b82f6", // blue-500
           neutral: "#020617", // slate-950
           "base-100": "#0f172a", // slate-900
           "base-content": "#f8fafc", // slate-50

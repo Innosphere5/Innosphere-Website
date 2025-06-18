@@ -141,15 +141,15 @@ Please respond within 24 hours as promised.
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50">
       {/* Header Section */}
       <div className="relative overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#5409da]/5 to-purple-600/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/5 to-purple-600/5"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <div className="text-center">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
               Let's Transform Your
-              <span className="text-[#5409da] block">Idea into SaaS</span>
+              <span className="text-indigo-600 block">Idea into SaaS</span>
             </h1>
 
-            <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-[#5409da]">
+            <div className="flex flex-wrap justify-center gap-4 text-sm font-medium text-indigo-600">
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4" />
                 Fast Delivery
@@ -172,7 +172,7 @@ Please respond within 24 hours as promised.
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {services.map((service, index) => (
             <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#5409da] text-[#5409da] rounded-2xl mb-4 group-hover:bg-[#5409da] group-hover:text-white transition-all duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                 {service.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -196,8 +196,8 @@ Please respond within 24 hours as promised.
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#5409da] rounded-xl flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-[#5409da]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-indigo-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">
@@ -210,8 +210,8 @@ Please respond within 24 hours as promised.
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#5409da] rounded-xl flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-[#5409da]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-indigo-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">
@@ -223,8 +223,8 @@ Please respond within 24 hours as promised.
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#5409da] rounded-xl flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-[#5409da]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-indigo-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">
@@ -238,8 +238,8 @@ Please respond within 24 hours as promised.
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#5409da] rounded-xl flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-[#5409da]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-indigo-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">
@@ -253,7 +253,7 @@ Please respond within 24 hours as promised.
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-r from-[#5409da] to-blue-50 rounded-xl">
+              <div className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl">
                 <h3 className="font-semibold text-gray-900 mb-2">
                   Ready to Start?
                 </h3>
@@ -261,7 +261,7 @@ Please respond within 24 hours as promised.
                   Book a free 30-minute consultation to discuss your project
                   requirements.
                 </p>
-                <button className="w-full bg-[#5409da] text-white py-2 px-4 rounded-lg font-medium hover:bg-[#5409da] transition-colors">
+                <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
                   Schedule Call
                 </button>
               </div>
@@ -315,7 +315,7 @@ Please respond within 24 hours as promised.
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -334,7 +334,7 @@ Please respond within 24 hours as promised.
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -354,7 +354,7 @@ Please respond within 24 hours as promised.
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                       placeholder="Your Company"
                     />
                   </div>
@@ -372,7 +372,7 @@ Please respond within 24 hours as promised.
                       value={formData.projectType}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                     >
                       <option value="">Select Project Type</option>
                       <option value="mvp">MVP Development</option>
@@ -397,7 +397,7 @@ Please respond within 24 hours as promised.
                       name="budget"
                       value={formData.budget}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                     >
                       <option value="">Select Budget</option>
                       <option value="50-100">$50 - $200</option>
@@ -419,7 +419,7 @@ Please respond within 24 hours as promised.
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 rounded-xl text-gray-900 border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all"
                     >
                       <option value="">Select Timeline</option>
                       <option value="asap">ASAP</option>
@@ -445,7 +445,7 @@ Please respond within 24 hours as promised.
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 rounded-xl text-gray-900  border border-gray-200 focus:ring-2 focus:ring-[#5409da] focus:border-transparent outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-xl text-gray-900  border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all resize-none"
                     placeholder="Tell us about your idea, target audience, key features, and any specific requirements..."
                   ></textarea>
                 </div>
@@ -455,10 +455,10 @@ Please respond within 24 hours as promised.
                   disabled={isSubmitting}
                   className={`w-full py-4 px-6 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-3 ${
                     isSubmitting
-                      ? "bg-[#5409da] cursor-not-allowed"
+                      ? "bg-indigo-400 cursor-not-allowed"
                       : isSubmitted
                       ? "bg-green-500"
-                      : "bg-[#5409da] hover:bg-[#5409da] hover:shadow-lg transform hover:-translate-y-1"
+                      : "bg-indigo-600 hover:bg-indigo-700 hover:shadow-lg transform hover:-translate-y-1"
                   }`}
                 >
                   {isSubmitting ? (
@@ -492,13 +492,13 @@ Please respond within 24 hours as promised.
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-[#5409da] to-purple-600 text-white">
+      <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Ready to Launch Your SaaS?
             </h2>
-            <p className="text-xl text-[#5409da] mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
               Join 100+ successful founders who've transformed their ideas into
               thriving SaaS platforms with Innosphere.
             </p>

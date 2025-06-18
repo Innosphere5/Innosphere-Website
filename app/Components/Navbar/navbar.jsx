@@ -193,13 +193,13 @@ const Navbar = () => {
         }
 
         .logo-gradient-scrolled {
-          background: linear-gradient(135deg, #5409da 0%, #5409da 20%, #5409da 40%, #5409da 60%, #5409da 80%, #5409da 100%);
+          background: linear-gradient(135deg, #1e1b4b 0%, #312e81 20%, #4f46e5 40%, #6366f1 60%, #2563eb 80%, #1e1b4b 100%);
           background-size: 300% 300%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: gradient-shift 6s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
-          filter: drop-shadow(0 2px 8px rgba(84, 9, 218, 0.6));
+          filter: drop-shadow(0 2px 8px rgba(37, 99, 235, 0.6));
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -224,7 +224,7 @@ const Navbar = () => {
         }
 
         ::-webkit-scrollbar-thumb {
-          background: linear-gradient(to bottom, #5409da, #5409da);
+          background: linear-gradient(to bottom, #4f46e5, #6366f1);
           border-radius: 4px;
         }
 
