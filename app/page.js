@@ -7,6 +7,7 @@ import TeamSection from "./TeamSection/teamSection";
 import Footer from "./Components/Footer/footer";
 import ClientWork from "./ClientWork/clientwork";
 import Contact from "./ContactSection/contactSection"
+import TestimonialSection from "./TestimonialSection/testimonialSection"
 
 const Page = () => {
   return (
@@ -32,6 +33,7 @@ const Page = () => {
       <section id="team">
         <TeamSection />
       </section>
+
 
       {/* Client Work Section with proper ID */}
       <section id="clientwork">

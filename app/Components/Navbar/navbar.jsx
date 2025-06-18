@@ -19,7 +19,7 @@ const Navbar = () => {
       }
 
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'policy', 'products', 'team', 'clientwork', 'contact'];
+      const sections = ['home', 'about', 'policy', 'products', 'team', 'clientwork' , 'testmonial', 'contact'];
       let currentSection = 'home';
 
       sections.forEach(sectionId => {
