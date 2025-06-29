@@ -237,7 +237,9 @@ export default function Footer() {
               <FooterLink href="https://brandbuys.in" external>
                 BrandBuys.in
               </FooterLink>
-              
+              <FooterLink href="https://one-place.com.au" external>
+                One Place - E-commerce
+              </FooterLink>
             </ul>
           </motion.div>
         </div>
@@ -255,10 +257,10 @@ export default function Footer() {
 
             <div className="flex flex-wrap justify-center lg:justify-end space-x-8 text-sm">
               {[
-                { label: "Privacy Policy", href: "#" },
-                { label: "Terms of Service", href: "#" },
-                { label: "Contact Us", href: "#" },
-                { label: "FAQ", href: "#" },
+                { label: "Privacy Policy", href: "/Privacy" },
+                { label: "Terms of Service", href: "/Terms" },
+           
+          
               ].map((link, index) => (
                 <Link
                   key={index}

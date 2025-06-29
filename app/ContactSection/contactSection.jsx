@@ -167,22 +167,7 @@ Please respond within 24 hours as promised.
         </div>
       </div>
 
-      {/* Services Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {services.map((service, index) => (
-            <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
-                {service.icon}
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+
 
       {/* Main Contact Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
@@ -488,6 +473,23 @@ Please respond within 24 hours as promised.
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Services Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {services.map((service, index) => (
+            <div key={index} className="text-center group">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                {service.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-600">{service.description}</p>
+            </div>
+          ))}
         </div>
       </div>
 

@@ -103,10 +103,11 @@ const Navbar = () => {
   // Navigation items - Updated to match your page structure
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'policy', label: 'About' },
+    { id: 'Policy', label: 'About' },
     { id: 'products', label: 'Products' },
     { id: 'team', label: 'Team' },
-    { id: 'clientwork', label: 'Client Work' }
+    { id: 'clientwork', label: 'Client Work' },
+  
   ];
 
   return (

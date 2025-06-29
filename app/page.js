@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/footer";
 import ClientWork from "./ClientWork/clientwork";
 import Contact from "./ContactSection/contactSection"
 import TestimonialSection from "./TestimonialSection/testimonialSection"
+import Privacy from "./Privacy/privacy"
 
 const Page = () => {
   return (
@@ -47,6 +48,8 @@ const Page = () => {
       <section id="footer">
         <Footer />
       </section>
+
+   
       
     </>
   );

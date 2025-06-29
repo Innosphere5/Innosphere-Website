@@ -4,6 +4,7 @@ import Image from 'next/image'
 import brandbuys from "../Images/brandbuys.png";
 import drivein from "../Images/drivein.png";
 import TestimonialSection from "../TestimonialSection/testimonialSection";
+import oneplace from "../Images/oneplace.png"
 
 // You'll need to create this component or import it properly
 const ScrollLink = ({ href, children, ...props }) => {
@@ -48,6 +49,20 @@ const ClientWorkSection = () => {
       tags: ["Shopify", "Razorpay"],
       status: "Live",
       link: "https://brandbuys.in",
+      features: ["Inventory Management", "Analytics Dashboard", "Multi-vendor Support"],
+      color: "from-purple-500 to-pink-500",
+      bgPattern: "bg-gradient-to-br from-purple-50 to-pink-50"
+    },
+
+    {
+      id: 3,
+      title: "One Place - E-commerce ",
+      category: "E-commerce",
+      description: "Complete e-commerce solution with advanced inventory management and analytics.",
+      image: oneplace,
+      tags: ["Shopify", "Razorpay"],
+      status: "Live",
+      link: "https://www.one-place.com.au/",
       features: ["Inventory Management", "Analytics Dashboard", "Multi-vendor Support"],
       color: "from-purple-500 to-pink-500",
       bgPattern: "bg-gradient-to-br from-purple-50 to-pink-50"
